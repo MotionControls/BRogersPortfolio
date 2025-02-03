@@ -1,0 +1,131 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Page-1" id="IpA9anVdENjcFEySoQMw">
+    <mxGraphModel dx="2284" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yqHFbLVaZHpWROdvndWL-1" value="Home" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="520" width="200" height="120" as="geometry">
+            <mxRectangle x="325" y="200" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-3" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Latest Additions&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Link to website Github&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yqHFbLVaZHpWROdvndWL-1">
+          <mxGeometry x="10" y="30" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-4" value="About Me" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="380" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-5" value="&lt;ul&gt;&lt;li&gt;Who Am I&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Picture + General Information&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;General Interests&lt;/li&gt;&lt;li&gt;Past Jobs&lt;/li&gt;&lt;li&gt;Links to current regular + ATS Resumes&lt;/li&gt;&lt;li&gt;Links to various social media + other related sites&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yqHFbLVaZHpWROdvndWL-4">
+          <mxGeometry x="10" y="30" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-6" value="Sidebar Links&lt;div&gt;Home : About Me : Projects&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="440" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-6" target="yqHFbLVaZHpWROdvndWL-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="510" as="sourcePoint" />
+            <mxPoint x="320" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-6" target="yqHFbLVaZHpWROdvndWL-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="510" as="sourcePoint" />
+            <mxPoint x="320" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-13" value="Project Index" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-14" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Latest Addition&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Links&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Style Guide&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Legacy Projects&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PSX Breakout&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Omori Abridged + Randomizer&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Piano Practice Game&lt;/li&gt;&lt;li&gt;Offline Quizlet Clone&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yqHFbLVaZHpWROdvndWL-13">
+          <mxGeometry x="10" y="30" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-6" target="yqHFbLVaZHpWROdvndWL-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="520" as="sourcePoint" />
+            <mxPoint x="460" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-17" value="Style Guide" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="280" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-19" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;How the articles are written&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Project start date + date of last edit is listed at the top.&lt;/li&gt;&lt;li&gt;Whether or not project is indev is listed below dates.&lt;/li&gt;&lt;li&gt;Link to project repo(s) (if applicable) are listed below status.&lt;/li&gt;&lt;li&gt;Mistakes/Lessons are contained in a solid box.&lt;/li&gt;&lt;li&gt;Important links are presented as hyperlinks.&lt;/li&gt;&lt;li&gt;Hyperlinks are notated and are present in their base-form at the bottom of the article.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Link to index&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yqHFbLVaZHpWROdvndWL-17">
+          <mxGeometry x="10" y="30" width="260" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-21" value="Legacy Projects" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="240" height="200" as="geometry">
+            <mxRectangle x="420" y="100" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-22" value="&lt;ul&gt;&lt;li&gt;Contains projects started long before portfolio site.&lt;/li&gt;&lt;li&gt;Do not contain a concrete start date.&lt;/li&gt;&lt;li&gt;Links&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Index&lt;/li&gt;&lt;li&gt;100 Pumpkins GBA Port&lt;/li&gt;&lt;li&gt;2024 TNTech Gamejam Entry&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="yqHFbLVaZHpWROdvndWL-21">
+          <mxGeometry x="10" y="30" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-25" value="PSX Breakout" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="360" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-26" value="Omori Abridged + Randomizer" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="380" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-27" value="Piano Practice Game" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="400" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-28" value="100 Pumpkins GBA Port" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="100" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-29" value="2024 TNTech Gamejam Entry" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="120" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-30" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-13" target="yqHFbLVaZHpWROdvndWL-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="530" as="sourcePoint" />
+            <mxPoint x="650" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-31" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-17" target="yqHFbLVaZHpWROdvndWL-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="670" as="sourcePoint" />
+            <mxPoint x="890" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-32" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="yqHFbLVaZHpWROdvndWL-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="200" as="sourcePoint" />
+            <mxPoint x="710" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-33" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-21" target="yqHFbLVaZHpWROdvndWL-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="280" as="sourcePoint" />
+            <mxPoint x="710" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-34" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-13" target="yqHFbLVaZHpWROdvndWL-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="280" as="sourcePoint" />
+            <mxPoint x="710" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-35" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-13" target="yqHFbLVaZHpWROdvndWL-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="280" as="sourcePoint" />
+            <mxPoint x="710" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-36" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yqHFbLVaZHpWROdvndWL-13" target="yqHFbLVaZHpWROdvndWL-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="280" as="sourcePoint" />
+            <mxPoint x="710" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-38" value="Offline Quizlet Clone" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="420" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yqHFbLVaZHpWROdvndWL-39" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="yqHFbLVaZHpWROdvndWL-38" source="yqHFbLVaZHpWROdvndWL-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="480" as="sourcePoint" />
+            <mxPoint x="710" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
