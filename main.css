@@ -1,0 +1,27 @@
+body{
+	background-image: url("res/bg_paper.webp");
+}
+
+#topbar{
+	border: 2px solid;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	width: fit-content;
+}
+
+#title{
+	text-align: center;
+}
+
+#article_head{
+	text-align: center;
+}
+
+#article_body{
+	border: 2px solid;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+}
