@@ -6,4 +6,52 @@
 	margin-right: auto;
 	text-align: center;
 	width: fit-content;
+	background-color: white;
+}
+
+#project_container{
+	border: 2px solid;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	background-color: white;
+}
+
+#section_header{
+	text-align: center;
+}
+
+#lesson{
+	border: 2px solid;
+	border-color: #cb4335;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	background-color: #fadbd8;
+}
+
+#rant{
+	border: 2px solid;
+	border-color: #1f618d;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	background-color: #aed6f1;
+}
+
+#codeblock{
+	border: 2px solid;
+	border-color: #273746;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	background-color: #d6dbdf;
+	overflow: auto;
 }
