@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="projects_index.css">
+		<title>INDEX</title>
+	</head>
+	<body>
+		<h1 id="title">BRYNN'S PORTFOLIO</h1>
+		<p id="topbar"><a href="index.html">Home</a> | <a href="aboutme.html">About Me</a> | <a href="project_index.html">Projects</a></p>
+		<h1 id="article_head">PSX BREAKOUT</h1>
+		<p id="article_body">
+			Project Started: 01/12/2025<br>
+			Last Updated: 02/01/2025<br>
+			Relevant Links:<br>
+			&ensp; <a href="https://github.com/MotionControls/HelloBreakout">HelloBreakout</a>&sup1;<br>
+			&ensp; <a href="https://github.com/ABelliqueux/nolibgs_hello_worlds">nolibgs</a>&sup2;<br>
+		</p>
+		<div id="project_container">
+			<p id="lesson">
+				DISCLAIMER<br><br>
+				This definitely shouldn't be seen as a tutorial. I like to think I'm good at doing research but there is a less than insignificant
+				chance that I've gotten some things wrong. If you're interested in developing for the Playstation 1, I'd recommend exploring some of the
+				links at the bottom of the article.
+			</p>
+			
+			<h2 id="section_header">Introduction</h2>
+			Ever since I got into making homebrew for old consoles, I had always wanted to make something for the Playstation 1.
+			But I had always waited because I had assumed that, being among the first consoles to really push 3D, it would be really hard to develop for.
+			After the Game Dev Club's week-long game jam in fall 2024, I decided to at least check it out.
+			The worst that could happen was a wasted hour. <br><br>
+			
+			I was pleasantly surprised to find that not only was it quite easy to develop for the Playstation 1,
+			it is arguably one of the easiest consoles to develop homebrew for. This is largely thanks to the many resources found from
+			the <a href="https://www.psx.dev/getting-started">PSX.Dev</a> community and <a href="https://psx.arthus.net/starting.html">PSX Arthus</a>.<br><br>
+			
+			To learn the basics of PSX dev, I decided to create a simple Breakout clone. Unlike most of my other projects, I decided I didn't need
+			to create a whole design document, as I wasn't sure how far I'd really be willing to take this project before moving on to something else.<br><br>
+			
+			<h2 id="section_header">First Steps</h2>
+			The first and, arguably, most important part of this whole shebang was deciding which tools I would use.
+			According to Arthus, the two big libraries are <a href="https://github.com/ABelliqueux/nolibgs_hello_worlds">Nugget+PsyQ</a> and
+			<a href="https://github.com/Lameguy64/PSn00bSDK">PSn00bSDK</a>.
+			From a beginner's perspective, both seem to accomplish the same thing. The biggest notable difference I could find is in the amount of support I could get.
+			Seeing as how PSn00bSDK is the most recent of the two, I decided to go with PsyQ.<br><br>
+			
+			Next was the emulator. I had considered getting something setup to allow me to play on a real console, but at this point I both
+			didn't have a PS1 and didn't want to go through the trouble of turning it into a devkit. <a href="https://duckstation.org/">DuckStation</a>
+			was at the top of my list, but I ended up going with <a href="https://github.com/grumpycoders/pcsx-redux">PCSX-Redux</a>. Though I don't think
+			it's ideal for general play, it has <b>loads</b> of features for developers.<br><br>
+			
+			I'll eventually need more tools to handle some concepts I don't quite understand yet, but for now this was my base toolkit.<br><br>
+			
+			<h2 id="section_header">The Examples</h2>
+			After getting something of an environment setup, it was time to explore the examples provided by <a href="https://github.com/ABelliqueux/nolibgs_hello_worlds">nolibgs</a>.<br><br>
+			
+			hello_world was my first choice, and I was already having tons of information thrown at me.<br>
+			Lets take hello_world.c a few steps at a time.<br>
+			
+			<pre id="codeblock">
+
+#define VMODE 0                 // Video Mode : 0 : NTSC, 1: PAL
+#define SCREENXRES 320          // Screen width
+#define SCREENYRES 240          // Screen height
+#define CENTERX SCREENXRES/2    // Center of screen on x 
+#define CENTERY SCREENYRES/2    // Center of screen on y
+#define MARGINX 0               // margins for text display
+#define MARGINY 32
+#define FONTSIZE 8 * 7          // Text Field Height
+			</pre>
+			
+			<p id="rant">
+				Most of these are pretty self-explanatory, but I feel I should go over VMODE.<br>
+				Old consoles were split into two regions: NTSC (US/JP) and PAL (EU). While NTSC games ran at 60hz with a resolution of 320x240,
+				PAL games ran at 50hz with a resolution of 320x256. Due to this discrepancy, it is important that games account for the change in
+				resolution and speed. For example: Beatmania is optimised to run at full speed on PAL systems, while Ape Escape runs 17% slower on PAL systems.
+			</p>
+			
+			That isn't too bad. Next are the video buffers.
+			
+			<pre id="codeblock">
+
+DISPENV disp[2];	// Double buffered DISPENV and DRAWENV
+DRAWENV draw[2];
+short db = 0;		// index of which buffer is used, values 0, 1
+			</pre>
+			
+			To properly explain this I'll have to explain how the PS1 handles VRAM.<br>
+			VRAM is arranged into multiple 64x256 sections called texture pages. With 16 pages being stacked on top of another 16 pages,
+			we get a total texture space of 1024x512 arranged like this:
+			
+			<pre style="text-align:center;">
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|TP01|TP02|TP03|TP04|TP05|TP06|TP07|TP08|TP09|TP10|TP11|TP12|TP13|TP14|TP15|TP16|
+|====|====|====|====|====|====|====|====|====|====|====|====|====|====|====|====|
+|TP17|TP18|TP19|TP20|TP21|TP22|TP23|TP24|TP25|TP26|TP27|TP28|TP29|TP30|TP31|TP32|
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+			</pre>
+			
+			DISPENV holds information about the current display and display settings. It is essentially what is shown to the player.
+			DRAWENV holds information about what's currently being drawn and how it is drawn. Unlike DISPENV, this isn't shown to the player and
+			instead positioned somewhere in VRAM.<br>
+			I'm not entirely sure how to explain double-buffering, but just understand that it helps us hide artifacts when rendering frames.
+			
+		</div>
+		<p id="article_body">
+			&sup1; <a href="https://github.com/MotionControls/HelloBreakout">https://github.com/MotionControls/HelloBreakout</a><br>
+			&sup2; <a href="https://github.com/ABelliqueux/nolibgs_hello_worlds">https://github.com/ABelliqueux/nolibgs_hello_worlds</a><br>
+		</p>
+	</body>
+</html>
