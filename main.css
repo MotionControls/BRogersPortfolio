@@ -9,6 +9,7 @@ body{
 	text-align: center;
 	display: block;
 	width: fit-content;
+	background-color: white;
 }
 
 #title{
@@ -24,4 +25,5 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	width: fit-content;
+	background-color: white;
 }
